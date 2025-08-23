@@ -3,6 +3,6 @@
     email me@mylearning.com
 }
 
-mylearning.lol{
+mylearning.lol {
     reverse_proxy blog-server:3000
 }
