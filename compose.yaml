@@ -31,7 +31,7 @@ services:
     secrets:
       - db_password
   blog-server:
-    image: ptlvaibhav/blog-demo-app:build-657b2083c43940a400b94d8880a3716e43b6c6b0
+    image: ptlvaibhav/blog-demo-app:build-d24938a35aacbdcd24f96065c7071530a3a38eb1
     deploy:
       replicas: 1
       update_config:
@@ -66,7 +66,7 @@ services:
       - db_password
       - db_username
   caddy:
-    image:  'caddy:2-alpine'
+    image: caddy:2-alpine
     deploy:
       replicas: 1
       update_config:
@@ -87,7 +87,6 @@ services:
     configs:
       - source: Caddyfile
         target: /etc/caddy/Caddyfile
-
 volumes:
   blog-db-vol: null
   caddy_data: null
