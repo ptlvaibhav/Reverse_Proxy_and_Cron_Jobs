@@ -1,0 +1,8 @@
+
+{
+    email me@mylearning.com
+}
+
+mylearning.lol{
+    reverse_proxy blog-server:3000
+}
