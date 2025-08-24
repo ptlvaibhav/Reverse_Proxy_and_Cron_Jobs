@@ -34,6 +34,9 @@ services:
     image: ptlvaibhav/blog-demo-app:build-8e15436a30797d64db329defb2ff82cebd5bea6f
     deploy:
       replicas: 1
+      placement:
+        - constraints:
+          - node.labels.dbwala == true
       update_config:
         order: start-first
         failure_action: rollback
